@@ -22,17 +22,32 @@
         <script type="text/javascript">
 
 
-            
+ //pega o ano atual para fazer o cálculo das idades           
+ 
+
+//now = new Date();
+//dataAtualSistema = now.getYear();
+
+//alert(dataAtualSistema);
+
+            function anoDoSistema(){
+                
+                now = new Date();
+                anoCorrente = now.getFullYear();
+                alert(anoCorrente);
+                
+                return anoCorrente;
+                
+            }
 
             function limiteTransferencia(ano_tranferencia, mes_transferencia, dia_transferencia) {
 
-//        var d = new Date,
-//        ano_atual= d.getFullYear(),
-//        mes_atual = d.getMonth() +1,
-//        dia_atual = d.getDate(),
 
 
-                        ano_atual = '2018',
+
+//ano atual
+
+                        ano_atual =  anoDoSistema(),
                         mes_atual = '12',
                         dia_atual = '31',
                         ano_tranferencia = +ano_tranferencia,
@@ -47,11 +62,13 @@
 
                 return quantos_anos < 0 ? 0 : quantos_anos;
             }
-            
+       
              function limiteIdade(ano, mes, dia) {
+                 
+//ano posterior
+// ao inicio da inscrição
 
-
-                        ano_atual = '2019',
+                        ano_atual = anoDoSistema()+1,
                         mes_atual = '01',
                         dia_atual = '01',
                         
@@ -69,8 +86,9 @@
             }
              function limiteIdade2(ano2, mes2, dia2) {
 
-
-                        ano_atual2 = '2019',
+//ano posterior
+// ao inicio da inscrição
+                        ano_atual2 = anoDoSistema()+1,
                         mes_atual2 = '12',
                         dia_atual2 = '30',
                        
@@ -90,8 +108,8 @@
 
             function limiteApresentacao(ano_apresentacao, mes_apresentacao, dia_apresentacao) {
 
-
-                        ano_atual = '2018',
+//ano atual
+                        ano_atual = anoDoSistema(),
                         mes_atual = '12',
                         dia_atual = '31',
                         ano_apresentacao = +ano_apresentacao,
@@ -230,6 +248,7 @@ return nasci;
                     }
                 };
             });
+
 
         </script>
 

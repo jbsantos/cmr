@@ -3,7 +3,7 @@
 
 function abrirConexao() {
 	
-	$con = @mysql_connect("10.80.16.3", "root","manutencao");
+	$con = @mysql_connect("10.80.16.3", "root","123456");
 	
 	if (! $con) {
 		die ("Erro ao abrir a conexao com o MySQL: " . mysql_error ());
