@@ -1,0 +1,441 @@
+*{
+    margin:0;
+    padding:0;
+}
+p{ font-family: Arial, Verdana; font-size: 15px; color: #555 style:bold;}
+h1{ font-family: Verdana; font-size: 30px; color: #fff;}
+/*body  { background:#ffffff url("fundo1.jpg") top center no-repeat ; }*/
+/*body        { background: url("degrade.jpg") repeat-x; }
+.legenda {
+    font:20px verdana, arial, helvetica, sans-serif;
+    font-style: italic;
+    color:#555;
+    width:600px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow:auto;
+}
+
+#topo h1
+{
+    /*width:700px;
+    margin: 0 auto;
+    margin-top: 105px;
+    margin-top: 30px;
+    margin-bottom: 30px;*
+    text-align: center;
+    font-style: italic;
+    font-size: 35px;
+    color: #fff;
+    text-shadow:-3px 3px 2px #555;
+}
+*/
+#cabecalho
+{
+   margin-top: 58px; 
+}
+#cabecalho p
+{
+    /*width:700px;
+    margin: 0 auto;
+    margin-top: 105px;
+    
+    margin-bottom: 30px;*/
+    
+    text-align: center;
+    line-height: 115%;
+    font-size: 20px;
+    color: #000;
+}
+/*
+.negrito {
+    font-weight: bold;
+}
+
+.sublinhado {
+     text-decoration: underline;
+}
+*/
+#form_background
+{
+    position: relative;
+    background: url("relris2.3.4.screen.png") top center no-repeat;
+    width:700px;
+    height:908px;
+    border: 1px #ccc dotted;
+    /*position:absolute;*/
+    margin: 0 auto;
+    margin-top:30px;
+}
+
+#logo-form
+{
+    position: absolute;
+    /*float: right;*/
+    right:43px;
+    top:47px;
+}
+
+#logo-form img
+{
+    width:100px;
+}
+
+
+.input {
+    background-color: #fff;
+    font:12px verdana, arial, helvetica, sans-serif;
+    font-style: italic;
+    color:#04d;
+    width:500px;
+    border: dotted 1px #ccc;
+    margin-bottom: 5px;
+    padding: 3px;
+    text-align:center;
+}
+
+.input_pessoal {
+    background-color: #fff;
+    font:12px verdana, arial, helvetica, sans-serif;
+    font-style: italic;
+    color:#04d;
+    width:400px;
+    border: dotted 1px #ccc;
+    margin-bottom: 5px;
+    padding: 3px;
+}
+.input_secao {
+    background-color: #fff;
+    font:12px verdana, arial, helvetica, sans-serif;
+    font-style: italic;
+    color:#04d;
+    width:265px;
+    border: dotted 1px #ccc;
+    margin-bottom: 5px;
+    padding: 3px;
+    float:left;
+}
+
+.input_data {
+    background-color: #fff;
+    font:12px verdana, arial, helvetica, sans-serif;
+    font-style: italic;
+    color:#04d;
+    width:75px;
+    border: dotted 1px #ccc;
+    margin-bottom: 0px;
+    padding: 3px;
+    float:left;
+}
+
+.input_controle
+ {
+    background-color: #fff;
+    font:12px verdana, arial, helvetica, sans-serif;
+    font-style: italic;
+    color:#04d;
+    height:20px;
+    width:50px;
+    border: dotted 1px #ccc;
+    margin-bottom: 0px;
+    padding: 3px;
+    float:right;
+}
+
+.input_data_again {
+    background-color: #fff;
+    font:12px verdana, arial, helvetica, sans-serif;
+    font-style: italic;
+    color:#04d;
+    width:75px;
+    border: dotted 1px #ccc;
+    margin-bottom: 0px;
+    padding: 3px;
+    margin-left:65px;
+}
+
+.clearfix {display: inline-block;}
+
+.input_time {
+    background-color: #fff;
+    font:12px verdana, arial, helvetica, sans-serif;
+    font-style: italic;
+    color:#04d;
+    width:55px;
+    border: dotted 1px #ccc;
+    margin-bottom: 0px;
+    margin-left:38px;
+    padding: 3px;
+
+}
+
+.input_id {
+    background-color: #fff;
+    font:11px verdana, arial, helvetica, sans-serif;
+    font-style: italic;
+    color:#04d;
+    width:198px;
+    border: dotted 1px #ccc;
+    margin-bottom: 5px;
+    padding: 3px;
+    text-align:center;
+}
+
+.input_email {
+    background-color: #fff;
+    font:11px verdana, arial, helvetica, sans-serif;
+    font-style: italic;
+    color:#04d;
+    width:180px;
+    border: dotted 1px #ccc;
+    margin-bottom: 5px;
+    margin-left:0px;
+    padding: 3px;
+    float:left;
+    text-align:center;
+}
+
+.textarea {
+    background-color: #fff;
+    font:12px verdana, arial, helvetica, sans-serif;
+    font-style: italic;
+    color:#04d;
+    width:550px;
+    border: dotted 1px #ccc;
+    height:170px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.select {
+    background-color: #fff;
+    font:20px verdana, arial, helvetica, sans-serif;
+    font-style: bold;
+    color:#999;
+    width:600px;
+    border: dotted 1px #ccc;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.button:hover {
+    background-color: green;
+    font:13px verdana, arial, helvetica, sans-serif;
+    font-style: italic;
+    color:#fff;
+    width:140px;
+    border: solid 1px #fff;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.button {
+    background-color: #fff;
+    font:13px verdana, arial, helvetica, sans-serif;
+    font-style: italic;
+    color:#d00;
+    width:140px;
+    border: solid 1px #f00;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.om
+{
+    margin-top: 0px;
+    margin-left: 110px;
+}
+
+.secao
+{
+    margin-top: 13px;
+    margin-left: 116px;
+    width: 50px;
+    float:left;
+}
+
+.data
+{
+    margin-top: 13px;
+    margin-left: 420px;
+}
+
+.data_again
+{
+    margin-top: 0px;
+    margin-left: 590px;
+    margin-left:60px;
+}
+
+.controle
+{
+    margin-top: 41px;
+    margin-right: 85px;
+    margin-right:20px;
+    counter-increment: myIndex;
+}
+label:before {content:counter(myIndex);
+}
+
+.hora
+{
+    margin-top: 0px;
+    margin-left: 400px;
+}
+
+.pessoal
+{
+    margin-top: 25px;
+    margin-left: 230px;
+}
+
+.situacao
+{
+    margin-top: 50px;
+    margin-left: 90px;
+}
+
+.relator
+{
+    margin-top: 5px;
+    margin-left: 90px;
+    float: left;
+}
+
+.email
+{
+    margin-top: 5px;
+    margin-left: 302px;
+    color: #00a;
+    font-style: italic;
+}
+
+.botoes
+{
+    margin-top: 265px;
+    margin-left: 20px;
+    width: 500px;
+}
+
+
+.clear {
+  clear: both;
+}
+
+
+
+
+
+/* Novo CSS para cabeçalho e rodape*/
+
+#header{
+/*houve modificação*/
+position: relative;
+    z-index: -1;
+    height: 130px;
+    width: 100%;
+    padding-top:10px; 
+    background-color:#1659bf;
+    
+    /* o original (black)
+    background-image:-moz-radial-gradient(center,ellipse cover, rgb(100,100,100) 1%, rgb(0,0,0) 100%);
+    background-image:-webkit-gradient(radial,center center,0,center center,100%,color-stop(1%,rgb(100,100,100)),color-stop(100%,rgb(0,0,0)));
+    background-image:-webkit-radial-gradient(center,ellipse cover,rgb(100,100,100) 1%,rgb(0,0,0) 100%);
+    background-image:-o-radial-gradient(center,ellipse cover,rgb(100,100,100) 1%,rgb(0,0,0) 100%);
+    background-image:-ms-radial-gradient(center,ellipse cover,rgb(100,100,100) 1%,rgb(0,0,0) 100%);
+    background-image:radial-gradient(ellipse at center,rgb(100,100,100) 1%,rgb(0,0,0) 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=rgb(100,100,100), endColorstr=rgb(0,0,0), GradientType=1);*/
+    
+    
+    background-image:-moz-radial-gradient(center,ellipse cover,#1659bf 1%,#234b90 100%);
+    background-image:-webkit-gradient(radial,center center,0,center center,100%,color-stop(1%,#1659bf),color-stop(100%,#234b90));
+    background-image:-webkit-radial-gradient(center,ellipse cover,#1659bf 1%,#234b90 100%);
+    background-image:-o-radial-gradient(center,ellipse cover,#1659bf 1%,#234b90 100%);
+    background-image:-ms-radial-gradient(center,ellipse cover,#1659bf 1%,#234b90 100%);
+    background-image:radial-gradient(ellipse at center,#1659bf 1%,#234b90 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#1659bf, endColorstr=#234b90, GradientType=1);
+    
+    
+    color:#fff;
+}
+
+
+#logo {
+    text-align: left;
+    color:#fff;
+    padding: 10px;
+}
+#portal-title{font-size:0.85em;display:block;height:21px; margin-top:0px;}
+#logo h2{font-size:1.75em;line-height:.8em;font-weight:200;letter-spacing:-1px;margin:0 0 0px 0;color:#fff;}
+#portal-description{font-size:1.1em;text-transform:uppercase; top:4px;position:relative;}
+#logo-text .small{margin:13px 0 10px}
+/*#logo-text h1{font-size:2.4em;color: orange !important}*/
+#logo-text .big{margin:10px 0 13px}
+#logo-text .big h1{font-size:1.6em;}
+
+#logo-img {
+    float: left;
+}
+#logo-img img {
+    height: 92px;
+    margin-bottom:3px;
+}
+#logo-text {
+    float: left;
+    margin-left: 15px;
+}
+
+#logo-img:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+#topsection{
+/*houve modificação*/
+width:80%;
+margin-left: auto;
+margin-top:0px;
+/*background: #FFD700;*/
+/*background-image:url('imgs/background1.png');*/
+background-repeat:repeat-x;
+height: 90px; /*Height of top section*/
+/*border: 1px solid red;*/
+background-color: rgba(100,100,100,.0);
+ 
+}
+
+/* fonte do cabeçalho do Site */
+#topsection h2{
+/*houve modificação*/
+color: fbe90f;
+font-size: 2.75em;
+font-family:open_sansregular,Open Sans,Arial,Helvetica,sans-serif
+font-weight:800;
+/*text-shadow: 0 0 1px #fff, 0 0 2px #fff;*/ /*#d0eb6a, 0 0 50px #d0eb6a;*/
+line-height: 0.9em;
+
+}
+
+.creditos
+{	
+/*houve modificação*/
+    margin: 20px 0 0 0;
+    text-align: bottom;
+    font-family:open_sansregular,Open Sans,Arial,Helvetica,sans-serif
+    background-position:center bottom;
+    /*height: 120px;*/
+    width: 100%;
+    color:#fff;
+    margin-top:10px;
+    margin-bottom:0px; 
+    background-color:#1A54B0;
+    text-align: center;
+    padding-top:20px;
+    float:left;
+    background-image:radial-gradient(ellipse at center,#1659bf 1%,#234b90 100%);
+}
+.noborder {
+    border: 0;
+}
+

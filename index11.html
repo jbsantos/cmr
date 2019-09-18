@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="utf-8">
+		<title>Inscrição da Corrida da BARF</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="css.css">
+	</head>
+	<body>
+	    <div id="header">
+           	<div id="topsection">
+            	<div id="logo">
+            		<a href="http://www.barf.intraer">
+            		<div id="logo-img">
+
+				<img src="logo_barf1.png"></img>
+				</a>
+            		</div>
+            		<div id="logo-text">
+            			<span id="portal-title">Comando da Aeronáutica</span>
+            			<h2>Corrida da BARF</h2>
+            			<span id="portal-description">Base Aérea do Recife</span>
+            		</div>
+            	</div>
+            </div>
+        </div>
+<div class="formulario">	
+	<form name="form1" method="post" action="enviar.php">
+		<h1 align="center">Inscrição</h1>
+		<br>
+		<div class="col-xs-6">Nome Completo (Posto/Grad):
+			<input class="form-control input-sm" name="nome" type="text" required>
+		</div>
+		<div class="radio"> Sexo:
+				<input type="radio" name="sexo" value="Masculino" checked> Masculino 
+				<input type="radio" name="sexo" value="Feminino" > Feminino
+			 
+		
+		<div class="col-xs-2" id="idade_div">Idade:	 
+			<input id="idade" name="idade" class="form-control input-sm" type="number" title="Digite sua idade" required>
+		</div>
+<?php
+			include "verifica_idade.php";
+		?>
+</div>
+		<div class="col-xs-4" id="percurso">Percurso da Corrida: 
+			 <select class="form-control" name="tipo_corrida">
+				<option value="7km">Inicio: 07:30 - 7 KM</option>
+				<option value="4km">Inicio: 08:00 - 4 KM</option>
+	    		 </select>
+	    	</div>
+	    	<div class="text" > <p  style="margin-bottom:10px; text-align:center;">Declaração de Responsabilidade:<br></p>
+	    	    <label name="inpecao" value="inspecao">Informo aos devidos fins, estar apto a exercer tal esforço <br>físico, tendo em vista que minha INSPEÇÃO de SAÚDE,<br> se encontra dentro das normalidades militar,<br> <b>sem nenhum tipo de restrição.</b></label></br>
+    	    	<input id="inspecao" type="checkbox" value="aceito" name="aceito" Required> Aceito</input>
+	    	
+	    	</div>
+	    	
+	    	
+	    	
+	      <div align="center" class="col-xs-12"><br><input type="submit" name="Submit" value="Enviar"></div>
+	</form>
+			
+		</div>
+		<div class="creditos">
+				Base Aérea do Recife<br>
+				stiweb@barf.intraer
+		</div>
+	</body>
+
+</html>

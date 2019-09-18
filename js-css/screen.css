@@ -1,0 +1,330 @@
+*{
+    margin:0;
+    padding:0;
+}
+p{ font-family: Arial, Verdana; font-size: 15px; color: #555 style:bold;}
+h1{ font-family: Verdana; font-size: 30px; color: #fff;}
+/*body  { background:#ffffff url("fundo1.jpg") top center no-repeat ; }*/
+body        { background: url("degrade.jpg") repeat-x; }
+.legenda {
+    font:20px verdana, arial, helvetica, sans-serif;
+    font-style: italic;
+    color:#555;
+    width:600px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow:auto;
+}
+
+#topo h1
+{
+    /*width:700px;
+    margin: 0 auto;
+    margin-top: 105px;
+    margin-top: 30px;
+    margin-bottom: 30px;*/
+    text-align: center;
+    font-style: italic;
+    font-size: 35px;
+    color: #fff;
+    text-shadow:-3px 3px 2px #555;
+}
+
+#cabecalho
+{
+   margin-top: 150px; 
+}
+#cabecalho p
+{
+    /*width:700px;
+    margin: 0 auto;
+    margin-top: 105px;
+    
+    margin-bottom: 30px;*/
+    
+    text-align: center;
+    line-height: 115%;
+    font-size: 20px;
+    color: #000;
+}
+
+.negrito {
+    font-weight: bold;
+}
+
+.sublinhado {
+     text-decoration: underline;
+}
+
+#form_background
+{
+    position: relative;
+    background: url("relris2.3.4.png") top center no-repeat;
+    width:700px;
+    height:1000px;
+    border: 1px #ccc dotted;
+    /*position:absolute;*/
+    margin: 0 auto;
+}
+
+#logo
+{
+    position: absolute;
+    /*float: right;*/
+    right:43px;
+    top:141px;
+}
+
+#logo img
+{
+    width:100px;
+}
+
+
+.input {
+    background-color: #fff;
+    font:12px verdana, arial, helvetica, sans-serif;
+    font-style: italic;
+    color:#04d;
+    width:500px;
+    border: dotted 1px #ccc;
+    margin-bottom: 5px;
+    padding: 3px;
+    text-aling:center;
+}
+
+.input_pessoal {
+    background-color: #fff;
+    font:12px verdana, arial, helvetica, sans-serif;
+    font-style: italic;
+    color:#04d;
+    width:400px;
+    border: dotted 1px #ccc;
+    margin-bottom: 5px;
+    padding: 3px;
+}
+.input_secao {
+    background-color: #fff;
+    font:12px verdana, arial, helvetica, sans-serif;
+    font-style: italic;
+    color:#04d;
+    width:265px;
+    border: dotted 1px #ccc;
+    margin-bottom: 5px;
+    padding: 3px;
+    float:left;
+}
+
+.input_data {
+    background-color: #fff;
+    font:12px verdana, arial, helvetica, sans-serif;
+    font-style: italic;
+    color:#04d;
+    width:70px;
+    border: dotted 1px #ccc;
+    margin-bottom: 0px;
+    padding: 3px;
+        float:left;
+}
+
+.input_controle
+ {
+    background-color: #fff;
+    font:12px verdana, arial, helvetica, sans-serif;
+    font-style: italic;
+    color:#04d;
+height:20px;
+    width:50px;
+    border: dotted 1px #ccc;
+    margin-bottom: 0px;
+    padding: 3px;
+    float:right;
+}
+
+.input_data_again {
+    background-color: #fff;
+    font:12px verdana, arial, helvetica, sans-serif;
+    font-style: italic;
+    color:#04d;
+    width:65px;
+    border: dotted 1px #ccc;
+    margin-bottom: 0px;
+    padding: 3px;
+    margin-left:65px;
+}
+
+.clearfix {display: inline-block;}
+
+.input_time {
+    background-color: #fff;
+    font:12px verdana, arial, helvetica, sans-serif;
+    font-style: italic;
+    color:#04d;
+    width:55px;
+    border: dotted 1px #ccc;
+    margin-bottom: 0px;
+    margin-left:38px;
+    padding: 3px;
+
+}
+
+.input_id {
+    background-color: #fff;
+    font:11px verdana, arial, helvetica, sans-serif;
+    font-style: italic;
+    color:#04d;
+    width:198px;
+    border: dotted 1px #ccc;
+    margin-bottom: 5px;
+    padding: 3px;
+}
+
+.input_email {
+    background-color: #fff;
+    font:11px verdana, arial, helvetica, sans-serif;
+    font-style: italic;
+    color:#04d;
+    width:180px;
+    border: dotted 1px #ccc;
+    margin-bottom: 5px;
+    margin-left:0px;
+    padding: 3px;
+    float:left;
+}
+
+.textarea {
+    background-color: #fff;
+    font:12px verdana, arial, helvetica, sans-serif;
+    font-style: italic;
+    color:#04d;
+    width:550px;
+    border: dotted 1px #ccc;
+    height:170px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.select {
+    background-color: #fff;
+    font:20px verdana, arial, helvetica, sans-serif;
+    font-style: bold;
+    color:#999;
+    width:600px;
+    border: dotted 1px #ccc;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.button:hover {
+    background-color: green;
+    font:13px verdana, arial, helvetica, sans-serif;
+    font-style: italic;
+    color:#fff;
+    width:140px;
+    border: solid 1px #fff;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.button {
+    background-color: #fff;
+    font:13px verdana, arial, helvetica, sans-serif;
+    font-style: italic;
+    color:#d00;
+    width:140px;
+    border: solid 1px #f00;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.om
+{
+    margin-top: 43px;
+    margin-left: 110px;
+}
+
+.secao
+{
+    margin-top: 13px;
+    margin-left: 116px;
+    width: 50px;
+    float:left;
+}
+
+.data
+{
+    margin-top: 13px;
+    margin-left: 420px;
+}
+
+.data_again
+{
+    margin-top: 0px;
+    margin-left: 590px;
+    margin-left:60px;
+}
+
+.controle
+{
+    margin-top: 0px;
+    margin-right: 85px;
+    margin-right:20px;
+    counter-increment: myIndex;
+}
+label:before {content:counter(myIndex);
+}
+
+.hora
+{
+    margin-top: 0px;
+    margin-left: 400px;
+}
+
+.pessoal
+{
+    margin-top: 25px;
+    margin-left: 230px;
+}
+
+.situacao
+{
+    margin-top: 50px;
+    margin-left: 90px;
+}
+
+.relator
+{
+    margin-top: 5px;
+    margin-left: 90px;
+    float: left;
+}
+
+.email
+{
+    margin-top: 5px;
+    margin-left: 302px;
+    color: #00a;
+    font-style: italic;
+}
+
+.botoes
+{
+    margin-top: 265px;
+    margin-left: 20px;
+    width: 500px;
+}
+
+.creditos
+{
+    padding: 85px 0 30px 0;
+    text-align: center;
+    font-style: italic;
+    font-size: 12px;
+    color: #999;
+}
+
+.clear {
+  clear: both;
+}
+

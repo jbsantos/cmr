@@ -1,0 +1,52 @@
+/* Cabecalho e rodape refeito e atualiza - 28/06/2015 - brunabsp*/
+#header{
+	height:130px;
+	width:100%;
+	background-color:#3a72bc;
+	background-image: linear-gradient(#1659bf,#2160BD);
+	padding:10px;
+	margin-left:-8px;
+	margin-top:-10px;
+	position:absolute;
+}
+#logo-img{
+	height:90px;
+	width:90px;
+	align:center;
+	margin-top:10px;
+	margin-left:15%;
+	float:left;
+	margin-right:10px;
+}
+#logo-text{
+	color:#fff;
+	float:left;
+	margin-top:10px;
+	font-family:open_sansregular,Open Sans,Arial,Helvetica,sans-serif;	
+}
+#logo-text h2{
+	line-height:0.02em;
+	font-size: 38.5px;
+	letter-spacing: -1px;
+	font-family: open_sansextrabold,Open Sans,Arial,Helvetica,sans-serif;
+}
+#portal-title{
+	font-size:0.85em;
+}
+#portal-description{
+	text-transform: uppercase;
+}
+#rodape{
+	height:50px;
+	width:100%;
+	color:#fff;
+	background-color:#3a72bc;
+	background-image: linear-gradient(#1659bf,#2160BD );
+	padding:10px;
+	padding-bottom:20px;
+	margin-left:-8px;
+	margin-top:65%;
+	position:absolute;
+	text-align:center;
+	font-family:open_sansregular,Open Sans,Arial,Helvetica,sans-serif;
+}
