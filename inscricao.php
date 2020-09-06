@@ -89,7 +89,7 @@
 // ao inicio da inscrição
                         ano_atual2 = anoDoSistema()+1,
                         mes_atual2 = '12',
-                        dia_atual2 = '30',
+                        dia_atual2 = '31',
                        
                         ano2 = +ano2,
                         mes2 = +mes2,
@@ -135,7 +135,7 @@
                     alert("está dentro do padrão estabelecido");
                 } else {
                     alert("Idade não permitida");
-                    //document.getElementById("nascimento").value='000-00-00';
+                    //documendocument.getElementById("nascimento").value='000-00-00';
                     return false;
 
                 }
@@ -180,11 +180,10 @@
             }
             
             function verificarDataNascimento() {
-                
                
                 var dataNaci = document.getElementById('nascimento').value;
                 
-                 var nasci = "";
+                 
                  var seriePretendida = "";
                   var seriefm = serie();
                 nascimento = String(dataNaci).split("/");
@@ -201,30 +200,31 @@
 
                //  alert(qtd_ano_nasc);
                 if (qtd_ano_menor >'9'&& qtd_ano_nasc <'13'&&seriefm=='6º') {
-                     return nasci = true;  
+                     return true;  
                 } else if(qtd_ano_menor >'10'&& qtd_ano_nasc <'14'&&seriefm=='7º') {
-                 return nasci = true;  
+                 return true;  
                 }
                 else if(qtd_ano_menor >'11'&& qtd_ano_nasc <'15'&&seriefm=='8º') {
-                  return nasci = true;  
+                  return  true;  
                 }
                 else if(qtd_ano_menor >'12'&& qtd_ano_nasc <'16'&&seriefm=='9º') {
-                  return nasci = true;  
+                  return ;  
                 }
                 else if(qtd_ano_menor >'13'&& qtd_ano_nasc <'18'&&seriefm=='1º') {
-                  return nasci = true;  
+                  return true;  
                 }
                 else if(qtd_ano_menor >'14'&& qtd_ano_nasc <'19'&&seriefm=='2º') {
-                  return nasci = true;  
+                  return  true;  
                 }else if(qtd_ano_menor >'15'&& qtd_ano_nasc <'20'&&seriefm=='3º') {
-                  return nasci = true;  
+                  return  true;  
                 }else {
+                     
                      alert('A série pretendida '+ seriePretendida + " ano não está dentro da idade estabelecida pelo edital R-69 Art 54 ");
-                    document.getElementById("nascimento").value='dd/mm/aaaa';
-        return nasci = false;       
+                     document.getElementById("nascimento").value='dd/mm/aaaa';
+                     return false; 
         }
                 
-return nasci;
+return false;
 
             }
 
@@ -333,7 +333,7 @@ return nasci;
                                             <option value="CB">CB</option>
                                             <option value="S1">S1</option>
                                             <option value="S2">S2</option>
-                                            <option value="CIVIL">CIVIL</option>
+                                           
                                         </select>
                                     </div>
                                 </div>
@@ -549,12 +549,12 @@ return nasci;
                                             <span class="glyphicon glyphicon-calendar" ></span>
                                             Data de Nascimento:
                                         </div>
-                                        <input placeholder="__/__/____" type="text" name="nascimento" onblur="verificarDataNascimento()" id="nascimento" class="form-control" required="O campo Data de nascimento deve ser preenchido" />     
+                                        <input placeholder="__/__/____" type="text" name="nascimento"  id="nascimento" class="form-control" required="O campo Data de nascimento deve ser preenchido" />     
                                     </div>
                                 </div>
                                 <div class="form-group col-lg-3 col-md-3" style="float: left; margin-left: -657px;">
                                     <label>Ano Letivo Pretendido:</label>
-                                    <select id="ensino" name="ensino" onchange="ChangeCarList()"> 
+                                    <select id="ensino" name="ensino" required="required" onchange="ChangeCarList()"> 
                                         <option value="">-- Ensino --</option> 
                                         <option value="fundamental">Fundamental</option> 
                                         <option value="medio">Médio</option> 
@@ -564,7 +564,7 @@ return nasci;
 
 
 
-                                    <select id="ensinofm" name="letivo" onchange="serie()">
+                                    <select id="ensinofm" name="letivo" required="" onchange="serie()">
                                         <option value="">serie</option> 
                                     </select> 
 
@@ -576,6 +576,10 @@ return nasci;
 
 
                                         function ChangeCarList() {
+                                            
+                                          
+                                            
+
                                             var ensinoList = document.getElementById("ensino");
 
                                             var serieList = document.getElementById("ensinofm");
@@ -597,14 +601,18 @@ return nasci;
                                                     serieList.options.add(car);
                                                     //alert(cars[1]); mostra ensino medio e fundamental por sequencia
                                                 }
+                                           
                                             }
+                                            document.getElementById('nascimento').value=''; // Limpa o campo
                                         }
 
                                         function serie() {
-
+                                            
                                             var seriefm = $('#ensinofm option:selected').text();
-
-                                            return seriefm
+                                           
+                                                return seriefm
+                                          
+                                           
                                         }
                                     </script>
 
@@ -629,7 +637,7 @@ return nasci;
                             <div class="box-footer">
                                 <div class="row margin"> 
                                     <div class="col-lg-3 col-md-3" style="text-align:center; margin-left: 38%; padding-top:3%;">
-                                        <button type="submit" class="btn btn-flat btn-success btn-lg">Enviar</button>
+                                       <input type="submit" class="btn btn-flat btn-success btn-lg" onclick=" return verificarDataNascimento();" value="Enviar"/>
                                     </div>
                                 </div>
                                 <div id="rodape2" style="margin-top:5%; text-align:center;" >
@@ -670,3 +678,4 @@ if ($dataLimite >= $dataAtual) {
     echo 'prazo finalizado';
 }
 ?>
+

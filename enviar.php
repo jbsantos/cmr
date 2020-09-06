@@ -233,7 +233,7 @@
 		}
 
 
-	$msg= "<h3 style='margin-left:40px;'>Colégio Militar de Recife- Inscri&ccedil;&atilde;o <br><br></h3>";
+	$msg= "<h3 style='margin-left:40px;'>Colégio Militar de Recife- Inscri&ccedil;&atilde;o para o sorteio <br><br></h3>";
 	$msg.= "Dados do Requerente: <br>";
 	$msg.= "<p style='margin-left:40px;'>Posto e Nome: $posto $nome_militar <br> ";
 	$msg.= "Identidade do Militar: $id <br>";
@@ -260,7 +260,7 @@
         $str = $email;
         $divideEmail = explode("@",$str);
        
-        if ($divideEmail[1]!='fab.mil.br'||$divideEmail[1]!='mail.intraer'||$email=='') {
+        if ($divideEmail[1]!='fab.mil.br'||$divideEmail[1]=='mail.intraer'||$email=='') {
             $email='';
         }
 
@@ -268,23 +268,28 @@
 	$objPhpMailer = new PHPMailer();
 	    
 	$objPhpMailer->SMTP_PORT = "587";
-	//$objPhpMailer->SMTPSecure = "tls";
+	$objPhpMailer->SMTPSecure = "tls";
 	$objPhpMailer->IsSMTP();
-	//$objPhpMailer->Host = "smtp.gmail.com";
-        $objPhpMailer->Host = "smtp.mail.intraer";
+	$objPhpMailer->Host = "smtp.gmail.com";
+        //$objPhpMailer->Host = "smtp.mail.intraer";
 	$objPhpMailer->SMTPAuth = true;
-        //$objPhpMailer->Username = "sereperfcmr@gmail.com";
-	$objPhpMailer->Username = "sdtic.gaprf@mail.intraer";
-	//$objPhpMailer->Password = "sereprf123@";
-        $objPhpMailer->Password = "\$Dt1c2017";
-	//$objPhpMailer->From = "sereperfcmr@gmail.com";
-        $objPhpMailer->From = "sdtic.gaprf@mail.intraer";
+       $objPhpMailer->Username = "sereperfcmr@gmail.com";
+	//$objPhpMailer->Username = "sdtic.gaprf@mail.intraer";
+	$objPhpMailer->Password = "sereprf123@";
+        //$objPhpMailer->Password = "\$Dt1c2017";
+	$objPhpMailer->From = "sereperfcmr@gmail.com";
+        //$objPhpMailer->From = "sdtic.gaprf@mail.intraer";
 	$objPhpMailer->FromName = "SEREP - RF";
 	//$objPhpMailer->AddAddress("moraesrmr@mail.intraer");
 	$objPhpMailer->AddAddress("$email");
-        //$objPhpMailer->AddBCC("marcosmas3@fab.mil.br");
-        //$objPhpMailer->AddBCC("ritoasr@fab.mil.br");
-	$objPhpMailer->AddBCC("jorgejbas@fab.mil.br");
+        //$objPhpMailer->AddAddress("$emailP");
+	$objPhpMailer->AddBCC("$emailP");
+
+        
+        // $objPhpMailer->AddBCC("marcosmas3@fab.mil.br");
+        // $objPhpMailer->AddBCC("ritoasr@fab.mil.br");
+            $objPhpMailer->AddBCC("jorgejbas@fab.mil.br");
+	
         
         $objPhpMailer->IsHTML(true);
 
@@ -301,7 +306,7 @@
 	                            </html>";
 
 	$objPhpMailer->Send();
- mysql_close($con);
+ //mysql_close($con);
      
         if (isset($_POST["funcao"])) {
     $funcao = $_POST["funcao"];
@@ -354,7 +359,12 @@
                 . "grau,letivo, ensino, email, tel ,exclusao_logic, bol_local, bol_local_a, amparo, data2, email_p, localidade, saram, id) values ('$dados[0]','$dados[1]','$dados[2]','$dados[3]','$dados[4]','$dados[5]',"
                 . "'$dados[6]','$dados[7]','$dados[8]','$dados[9]','$dados[10]','$dados[11]',1,'$dados[12]','$dados[13]','$dados[14]','$dataSistema','$emailP','$localidade','$dados[15]','$dados[16]')";
         
-        $result = mysql_query($insert);      
+        $result = mysql_query($insert);  
+
+if($result){
+echo "<script>alert('Inscrição realizada com sucesso')</script>";
+}
+
         mysql_close($con);
     }
 //        if ($result) {

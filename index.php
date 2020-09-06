@@ -1,4 +1,6 @@
 <?php
+
+
 $art52_I = "<b>I - o órfão, filho de militar de carreira ou da reserva remunerada do Exército, independente da
 data do falecimento do pai ou da mãe;<br><br>";
 
@@ -47,8 +49,8 @@ function checkCampo() {
                 <div class="box box-solid bg-light-green">
                     <!-- borda tracejada do cabçalho interno verde-->
                     <div class="box-header" align="center" style="background-color: #F7FDCA; border:3px dashed white; border-radius: 3px; width: 105%; margin-left: -27px" >
-                        <h1 class="">Prazo de inscrição: 1 a 21 outubro de 2019</h1> 
-  			<!--<h1 style="color:red" class="alert">INSCRIÇÕES ENCERRADAS</h1> -->
+                        <!--<h1 class="">Prazo de inscrição: 1 a 21 outubro de 2019</h1> -->
+  			<h1 style="color:red" class="alert">INSCRIÇÕES ENCERRADAS</h1> 
                             
                        <!-- <h3 class=""><span style="color:red"><b>Aviso:</b></span> As vagas para matrícula de dependentes de militares da Aeronáutica no CMR ainda não foram recebidas pelo SEREP-RF. Há uma previsão para o 14 de janeiro de 2019, que pode ser confirmada ou não.</h3> -->
                             <br> 
@@ -107,7 +109,15 @@ function checkCampo() {
         
         <div class="row margin"> 
    <div class="col-lg-3 col-md-3" style="text-align:center; margin-left: 38%; padding-top:3%;">
-      <button type="submit" class="btn  btn-flat btn-success btn-lg" onclick="return checkCampo()">Continuar</button>
+  
+
+<?php  if (date("d/m/Y")<='21/10/2019') {
+      echo date("d/m/Y");
+
+ ?>
+    	<button type="submit" class="btn  btn-flat btn-success btn-lg" onclick="return checkCampo()">Continuar</button>
+<?php } ?>
+
     </div>
             </div> 
 </div>
