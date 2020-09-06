@@ -254,8 +254,9 @@
 	$msg.= "Grau de parentesco: $grau <br>";
 	$msg.= "Ano Letivo desejado cursar: $letivo <br>";
 	$msg.= "Nivel de ensino: $ensino <br> </p>";
-	$msg.= "O participante declara querer matricular seu dependente na CMR!";
-        
+	$msg.= "1. O participante declara ter conhecimento das instruções e requisitos previsto no R-69, Portaria nº 100-DECEX, Portaria nº 205-DECEX e Portaria nº 300-DECEX.<br>";
+        $msg.= "2. A efetivação da matrícula do dependente sorteado será de responsabilidade do CMR, após a análise de todos os requisitos previstos nas legislações.";
+
         $str = $email;
         $divideEmail = explode("@",$str);
        
@@ -281,13 +282,13 @@
 	$objPhpMailer->FromName = "SEREP - RF";
 	//$objPhpMailer->AddAddress("moraesrmr@mail.intraer");
 	$objPhpMailer->AddAddress("$email");
-        $objPhpMailer->AddBCC("marcosmas3@fab.mil.br");
-        $objPhpMailer->AddBCC("ritoasr@fab.mil.br");
+        //$objPhpMailer->AddBCC("marcosmas3@fab.mil.br");
+        //$objPhpMailer->AddBCC("ritoasr@fab.mil.br");
 	$objPhpMailer->AddBCC("jorgejbas@fab.mil.br");
         
         $objPhpMailer->IsHTML(true);
 
-	$assunto="Matricula do Colégio Militar";
+	$assunto="Inscrição para o sorteio de vagas no Colégio Militar de Recife";
 	$objPhpMailer->Subject = utf8_decode($assunto);
 	$objPhpMailer->Body = "<html>
 	                                       <head>

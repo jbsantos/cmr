@@ -5,7 +5,7 @@
 <html style="min-height: 673px;">
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">          
-        <title> Matrícula Colégio Militar</title>
+        <title> Inscrição para sorteio de vagas para o Colégio Militar do Recife</title>
         <link rel="shortcut icon" href="img/CRM.ico" />
         <meta charset="utf-8">
         <!-- bootstrap 3.0.2 -->
@@ -34,7 +34,6 @@
                 
                 now = new Date();
                 anoCorrente = now.getFullYear();
-                alert(anoCorrente);
                 
                 return anoCorrente;
                 
@@ -259,6 +258,7 @@ return nasci;
                 $("#data_bol_a").mask("99/99/9999");
                 $("#controle").mask("999/9999");
                 $("#hora").mask("99:99");
+                $("#saram").mask("999999-9");
             });
         </script> 
 
@@ -278,7 +278,7 @@ return nasci;
                 <div class="box box-solid bg-light-green">
                     <!-- borda tracejada do cabçalho interno verde-->
                     <div class="box-header" align="center" style="background-color: #DC143C; border:3px dashed white; border-radius: 3px;" >
-                        <h1 class="">Matrícula Colégio Militar <br> 
+                        <h1 class="">Inscrição para sorteio de vagas para o Colégio Militar do Recife <br> 
                             <span style="font-size: 17px;font-style: italic;">SEREP-RF - Serviço de Recrutamento e Preparo de Pessoal da Aeronáutica de Recife</span> 
                             <!-- box menor com o nome ala 15 lateral direita -->
                             <a href="http://www.sereprf.intraer">
@@ -352,7 +352,7 @@ return nasci;
                                 <div class="form-group">
                                     <div class="form-group col-lg-3 col-md-3" style=" margin-top: -60PX; float: right">
                                         <label>SARAM :</label>
-                                        <input class="form-control" type="number" name="saram" maxlength="30" id="saram" placeholder="SARAM" required="Número do SARAM deve ser preenchido."/>
+                                        <input class="form-control" type="text" name="saram" maxlength="7" id="saram" placeholder="SARAM" required="Número do SARAM deve ser preenchido."/>
                                     </div>
                                 </div>
                             </div>
@@ -519,9 +519,9 @@ return nasci;
 
                             <div class="box box-header">
                                 <h5 class="box-title"> 
-                                    <p style="text-align: justify-all; float:left;">    Ao Ilmo. Sr. Comandante do Colégio Militar de Recife:</br></br>
-                                        Objetivo: Matricula do Colégio Militar de Recife</br></br>
-                                        1. Vem requerer a V. Exa.(V. Sa.) concender matricula no colégio Militar de Recife, em regime de externato, para meu dependente, conforme descrito abaixo:
+                                    <p style="text-align: justify-all; float:left;"> Ao Senhor Chefe do Serviço de Recrutamento e Preparo de Pessoal da Aeronáutica de Recife:</br></br>
+                                        Objetivo: Inscrição para participar do sorteio de vagas para o Colégio Militar de Reicfe. </br> </br>
+                                        1. Vem requerer a inscrição para sorteio de vagas no Colégio Militar de Recife, para meu dependente, conforme descrito abaixo:
                                     </p>
                                 </h5>
                             </div><!-- /.box-header -->
@@ -634,7 +634,7 @@ return nasci;
                                 </div>
                                 <div id="rodape2" style="margin-top:5%; text-align:center;" >
                                     <p style="font-family: courier; font-size: 14px;" >SEREP-RF<br>
-                                        GAP-RF SDTIC-SUBSEÇÃO DE APLICAÇÕES.<br></p>
+                                        GAP-RF STI - SEÇÃO DE TECNOLOGIA DA INFORMAÇÃO.<br></p>
 
                                 </div>
                             </div>

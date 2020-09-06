@@ -8,7 +8,7 @@
 <html style="min-height: 673px;">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">      	
-    <title> Matrícula Colégio Militar</title>
+    <title> Inscrição para sorteio de vagas para o Colégio Militar do Recife</title>
     <link rel="shortcut icon" href="img/CRM.ico" />
     <meta charset="utf-8">
     <!-- bootstrap 3.0.2 -->
@@ -70,7 +70,7 @@ $(document).ready(function () {
                      <div class="box box-solid bg-light-green">
                             <!-- borda tracejada do cabçalho interno verde-->
                              <div class="box-header" align="center" style="background-color: #DC143C; border:3px dashed white; border-radius: 3px;" >
-					<h1 class="">Matrícula Colégio Militar <br> 
+					<h1 class="">Inscrição para sorteio de vagas para o Colégio Militar do Recife <br> 
 		                		<span style="font-size: 17px;font-style: italic;">SEREP-RF - Serviço de Recrutamento e Preparo de Pessoal da Aeronáutica de Recife</span> 
 		                                <!-- box menor com o nome ala 15 lateral direita -->
 				        		<a href="http://www.sereprf.intraer">
